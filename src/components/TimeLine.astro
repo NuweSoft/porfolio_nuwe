@@ -1,0 +1,29 @@
+---
+import Experience from "./Experience.astro";
+
+const experience = [
+  {
+    date: "Febreruary 2022",
+    title: "Flowbite Application UI v2.0.0",
+    description:
+      "Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.",
+    link: "#",
+  },
+  {
+    date: "Febreruary 2022",
+    title: "Flowbite Application UI v2.0.0",
+    description:
+      "Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.",
+  }
+];
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">
+  {
+    experience.map((exp) => (
+      <li class="mb-10 ms-6">
+        <Experience {...exp} />
+      </li>
+    ))
+  }
+</ol>
