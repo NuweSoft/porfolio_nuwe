@@ -1,79 +1,19 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Badge from "../components/Badge.astro";
-import Image from "../components/Image.astro";
-import LinkendInIcon from "../components/icons/LinkendIn.astro";
-import GitHubIcon from "../components/icons/GitHub.astro";
-import WhatsappIcon from "../components/icons/Whatsapp.astro";
-import FacebookIcon from "../components/icons/Facebook.astro";
-import SocialPill from "../components/SocialPill.astro";
-import EmailIcon from "../components/icons/Email.astro";
 import TimeLine from "../components/TimeLine.astro";
 import Seccion from "../components/Seccion.astro";
 import BriefcaseIcon from "../components/icons/Briefcase.astro";
+import Navbar from "../components/Navbar.astro";
 ---
 
 <Layout title="NuweSoft">
   <main class="px-6">
-    <Seccion class="py-40 pb-20">
-      <Image
-        clases="rounded-full size-16 background mb-4"
-        src="https://lanzadera.es/wp-content/uploads/2022/04/nuwe-logo.png"
-        alt="portfolio"
-      />
-      <h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
-        Hey, soy NuweSoft <a
-          href="https://www.linkedin.com/in/jhonatan-ancasi-363b10182/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="flex justify-center items-center"
-        >
-          <Badge>Disponible para trabajar</Badge>
-        </a>
-      </h1>
-      <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
-        <span class="text-white">+4 años de experiencia. </span>
-        <span class="text-red-200/90">Desarrollador Web. </span>
-        <span class="text-yellow-200/90">De Tarija, Bolivia.</span>
-        <span class="text-green-200/90"
-          >Especializado en crear aplicaciones web únicas.</span
-        >
-      </h2>
-      <nav class="flex gap-4 mt-8 flex-wrap">
-        <SocialPill
-          href="https://www.linkedin.com/in/jhonatan-ancasi-363b10182/"
-        >
-          <LinkendInIcon class="size-4 md:size-5" />
-          LinkendIn
-        </SocialPill>
-        <SocialPill href="https://github.com/NuweSoft">
-          <GitHubIcon class="size-4 md:size-5" />
-          GitHub
-        </SocialPill>
-        <SocialPill href="https://github.com/NuweSoft">
-          <WhatsappIcon class="size-4 md:size-5" />
-          Whatsapp
-        </SocialPill>
-        <SocialPill
-          href="https://www.facebook.com/profile.php?id=100078217647000"
-        >
-          <FacebookIcon class="size-4 md:size-5" />
-          Facebook
-        </SocialPill>
-        <SocialPill
-          href="mailto:jhonatanancasi@gmail.com"
-        >
-          <EmailIcon class="size-4 md:size-5" />
-          jhonatanancasi@gmail.com
-        </SocialPill>
-      </nav>
-    </Seccion>
-    <Seccion>
+    <Navbar />
+    <Seccion class="mt-12">
       <h2 class="text-2xl font-bold mb-8 flex gap-x-3 items-center text-white">
-        <BriefcaseIcon class="size-7 " /> Experiencia Laboral
+        <BriefcaseIcon class="size-7" /> Experiencia Laboral
       </h2>
       <TimeLine />
     </Seccion>
-  
   </main>
 </Layout>
