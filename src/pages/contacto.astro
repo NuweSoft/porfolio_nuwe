@@ -1,11 +1,108 @@
 ---
+import Navbar from "../components/Navbar.astro";
 import Seccion from "../components/Seccion.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="NuweSoft">
-    <main>
-        <Seccion class="" />
-    </main>
-  
+  <main>
+    <Navbar />
+    <Seccion class="flex flex-wrap justify-center items-center">
+      <div class="mx-auto max-w-2xl lg:max-w-none">
+        <div class="grid grid-cols-1 gap-x-8 gap-y-24 lg:grid-cols-2">
+          <div class="lg:order-last" style="opacity: 1; transform: none;">
+            <form>
+              <h2 class="font-display text-base font-semibold">
+                Work inquiries
+              </h2><div
+                class="isolate mt-6 -space-y-px rounded-2xl bg-white/50"
+              >
+                <div
+                  class="group relative z-0 transition-all focus-within:z-10"
+                >
+                  <input
+                    id=":S1:"
+                    autocomplete="name"
+                    placeholder=" "
+                    class="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-12 text-base/6 ring-4 ring-transparent transition focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5 group-first:rounded-t-2xl group-last:rounded-b-2xl"
+                    type="text"
+                    name="name"
+                  /><label
+                    for=":S1:"
+                    class="pointer-events-none absolute left-6 top-1/2 -mt-3 origin-left text-base/6 transition-all duration-200 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus: peer-[:not(:placeholder-shown)]:-translate-y-4 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:font-semibold peer-[:not(:placeholder-shown)]:"
+                    >Name</label
+                  >
+                </div><div
+                  class="group relative z-0 transition-all focus-within:z-10"
+                >
+                  <input
+                    id=":S2:"
+                    autocomplete="email"
+                    placeholder=" "
+                    class="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-12 text-base/6 ring-4 ring-transparent transition focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5 group-first:rounded-t-2xl group-last:rounded-b-2xl"
+                    type="email"
+                    name="email"
+                  /><label
+                    for=":S2:"
+                    class="pointer-events-none absolute left-6 top-1/2 -mt-3 origin-left text-base/6 transition-all duration-200 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus: peer-[:not(:placeholder-shown)]:-translate-y-4 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:font-semibold peer-[:not(:placeholder-shown)]:"
+                    >Email</label
+                  >
+                </div>
+                <div
+                  class="group relative z-0 transition-all focus-within:z-10"
+                >
+                  <input
+                    id=":S4:"
+                    autocomplete="tel"
+                    placeholder=" "
+                    class="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-12 text-base/6 ring-4 ring-transparent transition focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5 group-first:rounded-t-2xl group-last:rounded-b-2xl"
+                    type="tel"
+                    name="phone"
+                  /><label
+                    for=":S4:"
+                    class="pointer-events-none absolute left-6 top-1/2 -mt-3 origin-left text-base/6 transition-all duration-200 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus: peer-[:not(:placeholder-shown)]:-translate-y-4 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:font-semibold peer-[:not(:placeholder-shown)]:"
+                    >Phone</label
+                  >
+                </div><div
+                  class="group relative z-0 transition-all focus-within:z-10"
+                >
+                  <input
+                    id=":S5:"
+                    placeholder=" "
+                    class="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-12 text-base/6 ring-4 ring-transparent transition focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5 group-first:rounded-t-2xl group-last:rounded-b-2xl"
+                    type="text"
+                    name="message"
+                  /><label
+                    for=":S5:"
+                    class="pointer-events-none absolute left-6 top-1/2 -mt-3 origin-left text-base/6 transition-all duration-200 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus: peer-[:not(:placeholder-shown)]:-translate-y-4 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:font-semibold peer-[:not(:placeholder-shown)]:"
+                    >Message</label
+                  >
+                </div><div
+                  class="border border-neutral-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl"
+                >
+                  <fieldset>
+                    <button
+                      class="w-full relative isolate inline-flex items-center justify-center gap-x-2 rounded-lg border text-base/6 font-semibold px-[calc(theme(spacing[3.5])-1px)] py-[calc(theme(spacing[2.5])-1px)] sm:px-[calc(theme(spacing.3)-1px)] sm:py-[calc(theme(spacing[1.5])-1px)] sm:text-sm/6 focus:outline-none data-[focus]:outline data-[focus]:outline-2 data-[focus]:outline-offset-2 data-[focus]:outline-blue-500 data-[disabled]:opacity-50 [&>[data-slot=icon]]:-mx-0.5 [&>[data-slot=icon]]:my-0.5 [&>[data-slot=icon]]:size-5 [&>[data-slot=icon]]:shrink-0 [&>[data-slot=icon]]:text-[--btn-icon] [&>[data-slot=icon]]:sm:my-1 [&>[data-slot=icon]]:sm:size-4 forced-colors:[--btn-icon:ButtonText] forced-colors:data-[hover]:[--btn-icon:ButtonText] border-transparent bg-[--btn-border] dark:bg-[--btn-bg] before:absolute before:inset-0 before:-z-10 before:rounded-[calc(theme(borderRadius.lg)-1px)] before:bg-[--btn-bg] before:shadow dark:before:hidden dark:border-white/5 after:absolute after:inset-0 after:-z-10 after:rounded-[calc(theme(borderRadius.lg)-1px)] after:shadow-[shadow:inset_0_1px_theme(colors.white/15%)] after:data-[active]:bg-[--btn-hover-overlay] after:data-[hover]:bg-[--btn-hover-overlay] dark:after:-inset-px dark:after:rounded-lg before:data-[disabled]:shadow-none after:data-[disabled]:shadow-none text-white [--btn-bg:theme(colors.zinc.900)] [--btn-border:theme(colors.zinc.950/90%)] [--btn-hover-overlay:theme(colors.white/10%)] dark:text-white dark:[--btn-bg:theme(colors.zinc.600)] dark:[--btn-hover-overlay:theme(colors.white/5%)] [--btn-icon:theme(colors.zinc.400)] data-[active]:[--btn-icon:theme(colors.zinc.300)] data-[hover]:[--btn-icon:theme(colors.zinc.300)] cursor-default"
+                      type="button"
+                      >Enviar<span
+                        class="absolute left-1/2 top-1/2 size-[max(100%,2.75rem)] -translate-x-1/2 -translate-y-1/2 [@media(pointer:fine)]:hidden"
+                        aria-hidden="true"></span></button
+                    >
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div><div style="opacity: 1; transform: none;">
+            <h2 class="font-display text-base font-semibold">Our offices</h2><p
+              class="mt-6 text-base text-neutral-600"
+            >
+              Prefer doing things in person? We don’t but we have to list our
+              addresses here for legal reasons.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </Seccion>
+  </main>
 </Layout>
